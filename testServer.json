@@ -1,5 +1,5 @@
 {
-    "name": "Private 1",
+    "name": "Extropy Private Network",
     "engine": {
         "Ethash": {
             "params": {
@@ -17,25 +17,28 @@
         "accountStartNonce": "0x0100000",
         "maximumExtraDataSize": "0x20",
         "minGasLimit": "0x1388",
-        "networkID" : "0x133a123"
+        "networkID" : "0x20160822"
     },
     "genesis": {
         "seal": {
             "ethereum": {
-                "nonce": "0x0000000000000042",
-                "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                "nonce": "0x00006d6f7264656e",
+                "mixHash": "0x00000000000000000000000000000000000000647572616c65787365646c6578"
             }
         },
-        "difficulty": "0x1000000",
+        "difficulty": "0x20000",
         "author": "0x0000000000000000000000000000000000000000",
         "timestamp": "0x00",
         "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "extraData": "0x",
-        "gasLimit": "0x8dc6c0"
+        "gasLimit": "0x2fefd8"
     },
     "nodes": [
-        "enode://8354aa31cc378680e47be25c76fc6341b5f1c65c7c8c8d06ed220ff18a7928c8fc854b65f7a3732556fd50195f8bb265f718a32d1f0184e986047a167c8d5685@139.162.236.38:30303"
+      "enode://b791d39b98d21621874d0a72023aa75f705bb9e0db40d2478a3e788438a5ebf3f5ee7ffbe0a184659d55c86971722b756e8c2991794f1ca87671a3223639be0d@45.32.177.210:30303",
+      "enode://3354e22970234fd9db598f92e9d6b434f70074e47ea97b908b709e35b6806201cc08af407b7a7ad2b55b41096c09e7b4a00f7daf560bc34b02434244b0606a64@108.61.172.238:30303"
     ],
     "accounts": {
+        "b6cec6315c4207db97a678ed09749539680b7859": { "balance": "8888888879283530137623424", "nonce": "1" },
+        "e592ac96747db16337ac8f2e9d1e3dc8fd8bcca7": { "balance": "77777987987243298734823482", "nonce": "1" }
     }
 }
