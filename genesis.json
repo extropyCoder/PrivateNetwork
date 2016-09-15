@@ -1,6 +1,6 @@
 {
   "nonce": "0x1391eaa92b871f91",
-  "difficulty": "0x100000",
+  "difficulty": "0x800000",
   "gasLimit": "0x1388",
   "config": {
     "homesteadBlock": 0
