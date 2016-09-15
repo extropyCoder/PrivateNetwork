@@ -1,44 +1,44 @@
 {
-    "name": "Extropy Private Network",
-    "engine": {
-        "Ethash": {
-            "params": {
-                "gasLimitBoundDivisor": "0x0400",
-                "minimumDifficulty": "0x020000",
-                "difficultyBoundDivisor": "0x0800",
-                "durationLimit": "0x0a",
-                "blockReward": "0x4563918244F40000",
-                "registrar": "",
-                "frontierCompatibilityModeLimit": "0x0"
-            }
-        }
-    },
-    "params": {
-        "accountStartNonce": "0x0100000",
-        "maximumExtraDataSize": "0x20",
-        "minGasLimit": "0x1388",
-        "networkID" : "0x20160822"
-    },
-    "genesis": {
-        "seal": {
-            "ethereum": {
-                "nonce": "0x00006d6f7264656e",
-                "mixHash": "0x00000000000000000000000000000000000000647572616c65787365646c6578"
-            }
-        },
-        "difficulty": "0x20000",
-        "author": "0x0000000000000000000000000000000000000000",
-        "timestamp": "0x00",
-        "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-        "extraData": "0x",
-        "gasLimit": "0x2fefd8"
-    },
-    "nodes": [
-      "enode://b791d39b98d21621874d0a72023aa75f705bb9e0db40d2478a3e788438a5ebf3f5ee7ffbe0a184659d55c86971722b756e8c2991794f1ca87671a3223639be0d@45.32.177.210:30303",
-      "enode://3354e22970234fd9db598f92e9d6b434f70074e47ea97b908b709e35b6806201cc08af407b7a7ad2b55b41096c09e7b4a00f7daf560bc34b02434244b0606a64@108.61.172.238:30303"
-    ],
-    "accounts": {
-        "b6cec6315c4207db97a678ed09749539680b7859": { "balance": "8888888879283530137623424", "nonce": "1" },
-        "e592ac96747db16337ac8f2e9d1e3dc8fd8bcca7": { "balance": "77777987987243298734823482", "nonce": "1" }
+  "name": "Extropy",
+  "engine": {
+    "Ethash": {
+      "params": {
+        "gasLimitBoundDivisor": "0x0400",
+        "minimumDifficulty": "0x020000",
+        "difficultyBoundDivisor": "0x0800",
+        "durationLimit": "0x0d",
+        "blockReward": "0x4563918244f40000",
+        "frontierCompatibilityModeLimit": "0x0"
+      }
     }
+  },
+  "params": {
+    "accountStartNonce": "0x00",
+    "maximumExtraDataSize": "0x20",
+    "minGasLimit": "0x1388",
+    "networkID" : "0x133a193"
+  },
+  "genesis": {
+    "seal": {
+      "ethereum": {
+        "nonce": "0x1391eaa92b871f91",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x100000",
+    "author": "0x0000000000000000000000000000000000000000",
+    "timestamp": "0x00",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "gasLimit": "0x1388"
+  },
+  "nodes": [
+  "enode://3fbf5bf1952d6f2233f955403f07c9e1961cb9135719d388d38e40df9a4a209275353018ba52885f68da9ecffb85409ad8c6ce9022d6cf8200ea2b4c601099c0@108.61.172.238:30303"
+ ],
+  "accounts": {
+    "0000000000000000000000000000000000000001": { "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+    "0000000000000000000000000000000000000002": { "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+    "0000000000000000000000000000000000000003": { "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+    "0000000000000000000000000000000000000004": { "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+    "581ed5fb0465c610c17d8aeacaf859948d510f8a": { "balance": "56000000000000000000000000" }
+  }
 }

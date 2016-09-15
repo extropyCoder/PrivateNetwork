@@ -1,2 +1,2 @@
 # PrivateNetwork
-Config files for the private network
+Config files for the private network now with Parity nodes
